@@ -11,6 +11,7 @@ module.exports = {
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      mono: ["Consolas"],
     },
     extend: {
       spacing: {
@@ -31,5 +32,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("preline/plugin")],
+  plugins: [
+    require("preline/plugin"),
+    require("tailwindcss"),
+    require("autoprefixer"),
+  ],
 };
