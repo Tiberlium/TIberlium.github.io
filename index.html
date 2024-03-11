@@ -1,238 +1,413 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Tiberlium</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-            crossorigin="anonymous" />
-        <link rel="icon" type="image/x-icon" href="./asset/favicon.ico" />
-        <style>
-            body {
-                background-color: #f8f9fa;
-            }
-        </style>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiberlium</title>
+  <link rel="stylesheet" href="./output.css" />
+</head>
 
-    <body>
-        <!--Header-->
-        <div id="topheader" class="sticky-top">
-            <nav class="navbar navbar-expand-lg p-3 bg-light">
-                <div class="container">
-                    <a class="navbar-brand fw-bold" href="#">Tiberlium</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse text-center" id="navbarNav">
-                        <ul class="navbar-nav ms-auto pills-tab">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Skill">Keterampilan</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Projek">Projek</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#Kontak">Kontak</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<body class="bg-blue-dark">
+  <!--Navbar-->
+  <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-4 bg-blue-dark">
+    <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+      <a class="flex-none text-xl font-semibold text-white" href="#">Tiberlium</a>
+      <div class="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:ps-5">
+        <a class="font-medium text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          href="#Home" aria-current="page">Home</a>
+        <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          href="#skill">Skill</a>
+        <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          href="#project">Project</a>
+        <a class="font-medium text-white hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          href="#Contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <!--Navbar-->
+
+  <!-- Hero -->
+  <div class="relative overflow-hidden" id="home">
+    <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="max-w-2xl text-center mx-auto">
+        <h1 class="block text-3xl font-bold text-gray-light sm:text-4xl md:text-5xl dark:text-white relative">
+          Pemikir yang antusias menciptakan produk digital yang
+          <span class="text-purple">indah dan fungsional</span>
+        </h1>
+        <p class="mt-3 text-lg text-gray-light dark:text-gray-400">
+          Yuk, kenalan dengan saya !!
+        </p>
+      </div>
+
+      <div class="mt-10 relative max-w-5xl mx-auto">
+        <!-- <img
+            class="w-full object-cover h-96 sm:h-[480px] bg-no-repeat bg-center bg-cover rounded-xl" alt="No picture" 
+          ></img> -->
+        <div class="bg-cover bg-center h-72 w-full" style="background-image: url(asset/Photoprofile.png)"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- End Hero -->
+
+  <!--Skill-->
+  <h2 id="skill" class="text-white text-center text-3xl font-bold">Keterampilan<span class="font-mono">[skill]</span>
+  </h2>
+  <h3 class="text-center text-gray-800 font-light">yuk,liat apa saja yang saya bisa</h3>
+  <!-- Icon Blocks -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 448 512" fill="currentColor" {...props}>
+            <path
+              d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM243.8 381.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            JavaScript
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path
+              d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 011.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789h-4.263V24H9.789l-9-9C.303 14.5 0 13.795 0 13.105c0-.319.18-.818.316-1.105l3.789-7.895zm.679.679v11.787c.002.543.021 1.024.498 1.508L10.204 23h8.533v-4.263L4.784 4.784zm12.055-.678c-.899-.896-1.809-1.78-2.74-2.643-.302-.267-.567-.468-1.07-.462-.37.014-.87.195-.87.195L6.341 4.105l10.498.001z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            Dart
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path
+              d="M12 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0zM9.426 7.12a5.55 5.55 0 011.985.38v1.181a4.5 4.5 0 00-2.25-.566 3.439 3.439 0 00-2.625 1.087 4.099 4.099 0 00-1.012 2.906 3.9 3.9 0 00.945 2.754 3.217 3.217 0 002.482 1.023 4.657 4.657 0 002.464-.634l-.004 1.08a5.543 5.543 0 01-2.625.555 4.211 4.211 0 01-3.228-1.297 4.793 4.793 0 01-1.212-3.409 5.021 5.021 0 011.365-3.663 4.631 4.631 0 013.473-1.392 5.55 5.55 0 01.12-.004 5.55 5.55 0 01.122 0zm5.863.155h.836l-.555 2.652h1.661l.567-2.652h.81l-.555 2.652 1.732-.004-.15.697H17.91l-.412 1.98h1.852l-.176.698h-1.816l-.58 2.625h-.83l.567-2.625h-1.65l-.555 2.625h-.81l.555-2.625h-1.74l.131-.698h1.748l.401-1.976h-1.826l.138-.697h1.826zm.142 3.345L15 12.6h1.673l.423-1.98z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            CSharp
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 1024 1024" fill="currentColor" {...props}>
+            <path
+              d="M145.2 96l66 746.6L512 928l299.6-85.4L878.9 96H145.2zm595 177.1l-4.8 47.2-1.7 19.5H382.3l8.2 94.2h335.1l-3.3 24.3-21.2 242.2-1.7 16.2-187 51.6v.3h-1.2l-.3.1v-.1h-.1l-188.6-52L310.8 572h91.1l6.5 73.2 102.4 27.7h.4l102-27.6 11.4-118.6H510.9v-.1H306l-22.8-253.5-1.7-24.3h460.3l-1.6 24.3z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            HTML 5
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-800 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 24 24" fill="currentColor" {...props}>
+            <path
+              d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813L4.192 3.143zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137.905-9.923z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-semibold font-mono text-gray-800 dark:text-gray-200">
+            CSS 3
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 34 32" fill="currentColor" {...props}>
+            <path fill="currentColor" d="M19.314 15.987a2.392 2.392 0 11-4.784 0 2.392 2.392 0 014.784 0z" />
+            <path fill="currentColor"
+              d="M16.922 24.783c1.878 1.826 3.729 2.906 5.221 2.906.489 0 .952-.103 1.337-.334 1.337-.772 1.826-2.701 1.363-5.453-.077-.489-.18-.977-.309-1.492.514-.154.977-.309 1.44-.463 2.598-1.003 4.038-2.392 4.038-3.909 0-1.543-1.44-2.932-4.038-3.909-.463-.18-.926-.334-1.44-.463.129-.514.232-1.003.309-1.492.437-2.803-.051-4.758-1.389-5.53-.386-.231-.849-.334-1.337-.334-1.466 0-3.344 1.08-5.221 2.906-1.852-1.826-3.704-2.906-5.195-2.906-.489 0-.952.103-1.337.334-1.337.772-1.826 2.701-1.363 5.453.077.489.18.977.309 1.492-.514.154-.977.309-1.44.463-2.598 1.003-4.038 2.392-4.038 3.909 0 1.543 1.44 2.932 4.038 3.909.463.18.926.334 1.44.463a16.882 16.882 0 00-.309 1.492c-.437 2.752.051 4.707 1.363 5.453.386.232.849.334 1.337.334 1.492.051 3.344-1.029 5.221-2.829zm-1.441-3.472c.463.026.952.026 1.44.026s.977 0 1.44-.026a24.523 24.523 0 01-1.44 1.723 24.252 24.252 0 01-1.44-1.723zm-3.189-2.649c.257.437.489.849.772 1.26a27.786 27.786 0 01-2.263-.386c.232-.694.489-1.415.797-2.135.206.411.437.849.694 1.26zM10.8 12.463c.72-.154 1.466-.283 2.263-.386-.257.412-.514.823-.772 1.26s-.489.849-.694 1.286a17.109 17.109 0 01-.797-2.161zm1.415 3.524c.334-.694.694-1.389 1.106-2.083.386-.669.823-1.337 1.26-2.006a35.293 35.293 0 014.682 0c.463.669.874 1.337 1.26 2.006.412.694.772 1.389 1.106 2.083a26.922 26.922 0 01-1.106 2.083c-.386.669-.823 1.337-1.26 2.006a35.293 35.293 0 01-4.682 0 28.695 28.695 0 01-1.26-2.006 27.106 27.106 0 01-1.106-2.083zm10.057-1.389l-.694-1.286c-.257-.437-.489-.849-.772-1.26.797.103 1.543.232 2.263.386-.231.72-.489 1.44-.797 2.161zm0 2.778c.309.72.566 1.44.797 2.135-.72.154-1.466.283-2.263.386.257-.412.514-.823.772-1.26.232-.386.463-.823.694-1.26zm.591 8.925c-.206.129-.463.18-.746.18-1.26 0-2.829-1.029-4.372-2.572a26.868 26.868 0 002.186-2.701 23.619 23.619 0 003.447-.54c.129.463.206.926.283 1.389.36 2.186.077 3.755-.797 4.244zm1.338-13.555c2.881.823 4.604 2.083 4.604 3.241 0 1.003-1.183 2.006-3.266 2.804-.412.154-.874.309-1.337.437a27.01 27.01 0 00-1.26-3.241c.514-1.106.952-2.186 1.26-3.241zm-2.058-7.253c.283 0 .514.051.746.18.849.489 1.157 2.032.797 4.244-.077.437-.18.9-.283 1.389a33.072 33.072 0 00-3.447-.54 23.774 23.774 0 00-2.186-2.701c1.543-1.518 3.112-2.572 4.372-2.572zm-3.781 5.17c-.463-.026-.952-.026-1.44-.026s-.977 0-1.44.026c.463-.617.952-1.183 1.44-1.723.489.54.977 1.132 1.44 1.723zm-7.382-4.99c.206-.129.463-.18.746-.18 1.26 0 2.829 1.029 4.372 2.572a26.756 26.756 0 00-2.186 2.701 23.619 23.619 0 00-3.447.54c-.129-.463-.206-.926-.283-1.389-.36-2.186-.077-3.729.797-4.244zM9.643 19.228c-2.881-.823-4.604-2.083-4.604-3.241 0-1.003 1.183-2.006 3.266-2.803.412-.154.874-.309 1.337-.437a27.01 27.01 0 001.26 3.241c-.514 1.106-.952 2.212-1.26 3.241zm.54 2.829c.077-.437.18-.9.283-1.389 1.08.232 2.238.412 3.447.54a23.774 23.774 0 002.186 2.701c-1.543 1.517-3.112 2.572-4.372 2.572-.283 0-.514-.051-.746-.18-.875-.489-1.157-2.058-.797-4.244z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            ReactJS
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="flex-shrink-0 text-white size-8" viewBox="0 0 24 24" fill="currentColor" height="1em" width="1em"
+            {...props}>
+            <path
+              d="M13.9 2.01L3.9 12l3.09 3.09 2.71-2.7L20.09 2l-6.19.01zm.82 14.6l5.39-5.38h-5.93c-.11 0-.26 0-.34.07l-2.23 2.23-3.09 3.07 3.09 3.1 2.15 2.15c.07.07.14.17.26.15h6.07z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-mono font-semibold text-gray-800 dark:text-gray-200">
+            Flutter
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+
+      <!-- Icon Block -->
+      <div
+        class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-gray-700">
+        <!-- Icon -->
+        <div
+          class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+          <svg class="text-white flex-shrink-0 size-8" fill="none" viewBox="0 0 24 24" height="1em" width="1em"
+            {...props}>
+            <path fill="currentColor"
+              d="M8.5 2a3 3 0 000 6h7a3 3 0 100-6h-7zM15.5 9a3 3 0 100 6 3 3 0 000-6zM5.5 12a3 3 0 013-3h3v6h-3a3 3 0 01-3-3zM8.5 16a3 3 0 103 3v-3h-3z" />
+          </svg>
+        </div>
+        <!-- End Icon -->
+
+        <div class="mt-3">
+          <h3 class="text-sm sm:text-lg font-semibold font-mono text-gray-800 dark:text-gray-200">
+            Figma
+          </h3>
+        </div>
+      </div>
+      <!-- End Icon Block -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Icon Blocks -->
+  <!-- End Skill-->
+
+  <!--Project-->
+  <h2 class="text-white text-center text-3xl font-bold" id="project">Project</h2>
+  <h4 class="text-gray-800 text-center text-md sm:mx-8 font-light">Nih project dah kukerjakan walau jadul</h4>
+
+  <!-- Card Blog -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid lg:grid-cols-2 gap-6">
+      <!-- Card -->
+      <a class="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        href="#">
+        <div
+          class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+          <img class="size-full absolute top-0 start-0 object-cover" src="asset/Nias trip image.png"
+            alt="Image Description">
         </div>
 
-        <!--Header-->
-
-        <!--Hero-->
-        <div class="container-fluid text-center mt-4 bg-light" id="Home">
-            <div class="row">
-                <div class="col-sm col-md col-lg">
-                    <img src="./asset/Photoprofile.jpg" class="img-fluid bg-transparent" alt="no-picture" height="500"
-                        width="500">
-                </div>
-                <div class="col-sm col-md col-lg" style="margin-top: 5%;">
-                    <div class="pt-5">
-                        <p class="fs-5">Halo&#128075;,</p>
-                        <p class="fs-2 fw-light">Kenalkan&#44 saya <span class="fw-bold fs-3">Tiberlium Simson
-                                Gaho</span>
-                        </p>
-                        <p class=" fs-4 fw-light">Saya senang menjelajah hal baru terutama bidang teknologi serta
-                            membuat produk digital dalam bentuk app mobile dan website &#128187;</p>
-                    </div>
-                </div>
+        <div class="absolute top-0 inset-x-0 z-10">
+          <div class="p-4 flex flex-col h-full sm:p-6">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="size-[46px] border-2 border-white rounded-full"
+                  src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                  alt="Image Description">
+              </div>
+              <div class="ms-2.5 sm:ms-4">
+                <h4 class="font-semibold text-gray-dark">
+                  Tiber
+                </h4>
+              </div>
             </div>
+            <!-- End Avatar -->
+          </div>
         </div>
-        <!--Hero-->
 
-        <!--Skill-->
-        <div class="container-fluid text-center mt-3" id="Skill">
-            <p class="fs-3 fw-bolder">Keterampilan</p>
-            <p class="fs-6 fw-light">Beberapa teknologi yang saya gunakan</p>
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col">
-                        <i class="fab fa-html5 fa-4x" style="color:#F06529">
-                        </i>
-                        <p class="fw-light">HTML</p>
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-css3-alt fa-4x" style="color:blue"></i>
-                        <p class="fw-light">CSS</p>
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-js fa-4x" style="color: #FBBC05;"></i>
-                        <p class="fw-light">Javascript</p>
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-react fa-4x" style="color:#00d8ff"></i>
-                        <p class="fw-light">React</p>
-                    </div>
-                    <div class="col">
-                        <i class="fab fa-react fa-4x" style="color:black"></i>
-                        <p class="fw-light">React Native</p>
-                    </div>
-                    <div class="col">
-                        <i class="fas fa-fire fa-4x" style="color: #f5820d;"></i>
-                        <p class="fw-light">Firebase</p>
-                    </div>
-                </div>
+        <div class="absolute bottom-0 inset-x-0 z-10">
+          <div class="flex flex-col h-full p-4 sm:p-6">
+            <h3 class="text-lg sm:text-3xl font-semibold text-gray-dark group-hover:text-white/[.8]">
+              NiasTrip App
+            </h3>
+            <p class="mt-2 text-blue-dark/[.8]">
+              App ini merupakan app yang bertujuan untuk menjelajah lokasi pariwisata yang tersembunyi di kepulauan
+              nias. App ini dibangun dengan teknologi React native dan Firebase
+            </p>
+            <button type="button"
+              class="py-3 px-4 flex justify-center items-center size-[50px] text-md font-semibold rounded-lg bg-blue-dark text-blue border hover:bg-gray-dark disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-200">
+              <svg viewBox="0 0 512 512" fill="currentColor" height="1em" width="1em" {...props}>
+                <path
+                  d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32v242.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-32c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 104c-13.3 0-24-10.7-24-24s10.7-24 24-24 24 10.7 24 24-10.7 24-24 24z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </a>
+      <!-- End Card -->
 
+      <!-- Card -->
+      <a class="group relative block rounded-xl dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        href="#">
+        <div
+          class="flex-shrink-0 relative rounded-xl overflow-hidden w-full h-[350px] before:absolute before:inset-x-0 before:size-full before:bg-gradient-to-t before:from-gray-900/[.7] before:z-[1]">
+          <img class="size-full absolute top-0 start-0 object-cover" src="asset/Web image.png" alt="Image Description">
+        </div>
+
+        <div class="absolute top-0 inset-x-0 z-10">
+          <div class="p-4 flex flex-col h-full sm:p-6">
+            <!-- Avatar -->
+            <div class="flex items-center">
+              <div class="flex-shrink-0">
+                <img class="size-[46px] border-2 border-white rounded-full"
+                  src="https://images.unsplash.com/photo-1669837401587-f9a4cfe3126e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                  alt="Image Description">
+              </div>
+              <div class="ms-2.5 sm:ms-4">
+                <h4 class="font-semibold text-gray-dark">
+                  Tiber
+                </h4>
+
+              </div>
             </div>
+            <!-- End Avatar -->
+          </div>
         </div>
-        <!--Skill-->
 
-        <!--Project-->
-        <div class="container-fluid text-center mt-5" id="Projek">
-            <p class="fs-3 fw-bolder">Projek</p>
-            <p class="fs-6 fw-light">Projek yang telah saya kerjakan</p>
-            <div class="container mt-5-lg">
-                <div class="row">
-                    <div class="col-sm col-md col-lg mt-4">
-                        <p class="fs-3 fw-bold">App Niastrip</p>
-                        <p>App ini merupakan app yang bertujuan untuk menjelajah lokasi pariwisata yang tersembunyi di
-                            kepulauan nias. App ini dibangun dengan
-                            teknologi React native dan Firebase</p>
-                        <div>
-                            <a href="./data/Niastrip.apk" download style="text-decoration: none;">
-                                <button type="button" class="btn btn-primary"><i class="fab fa-get-pocket"></i> Dapatkan
-                                    apk</button>
-                            </a>
-
-                            <a href="https://github.com/Tiberlium/NiasTrip" style="text-decoration: none;">
-                                <button type="button" class="btn btn-dark"><i class="fab fa-github"></i> Repositori
-                                </button>
-                            </a>
-
-                        </div>
-
-                    </div>
-                    <div class="col-sm col-md col-lg mt-3">
-                        <img src="./asset/Nias trip image.png" class="img-fluid rounded" height="400" width="400">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm col-md col-lg mt-5">
-                        <p class="fs-3 fw-bold">Web Admin Niastrip</p>
-                        <p>Web admin ini bertujuan untuk mengelola data dan informasi yang akan ditampilkan ke aplikasi
-                            mobile Niastrip.Website ini dibangun dengan teknologi Reactjs dan Firebase</p>
-                        <div>
-                            <a href="https://niastrip-admin.netlify.app" style="text-decoration: none;">
-                                <button type="button" class="btn btn-primary"><i class="fas fa-paper-plane"></i>
-                                    Kunjungi</button>
-                            </a>
-
-                            <a href="https://github.com/Tiberlium/niastripadmin" style="text-decoration: none;">
-                                <button type="button" class="btn btn-dark"><i class="fab fa-github"></i>
-                                    Repositori</button>
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="col-sm col-md col-lg mt-3">
-                        <img src="./asset/Web image.png" class="img-fluid rounded" height="400" width="400">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm col-md col-lg mt-5">
-                        <p class="fs-3 fw-bold">Web Portofolio</p>
-                        <p>Web ini bertujuan untuk menampilkan informasi tentang projek apa saja yang telah saya
-                            kerjakan.Web ini dibangun menggunakan Bootstrap 5</p>
-                        <div>
-                            <a href="https://tiberlium.github.io/" style="text-decoration: none;">
-                                <button type="button" class="btn btn-primary"><i class="fas fa-paper-plane"></i>
-                                    Kunjungi</button>
-                            </a>
-
-                            <a href="https://github.com/Tiberlium/tiberlium.github.io" style="text-decoration: none;">
-                                <button type="button" class="btn btn-dark"><i class="fab fa-github"></i>
-                                    Repositori</button>
-                            </a>
-
-
-                        </div>
-                    </div>
-                    <div class="col-sm col-md col-lg mt-3">
-                        <img src="./asset/Portfolioimage.png" class="img-fluid rounded" height="400" width="400">
-                    </div>
-                </div>
-            </div>
+        <div class="absolute bottom-0 inset-x-0 z-10">
+          <div class="flex flex-col h-full p-4 sm:p-6">
+            <h3 class="text-lg sm:text-3xl font-semibold text-gray-dark group-hover:text-white/[.8]">
+              NiasTrip Admin WebApp
+            </h3>
+            <p class="mt-2 text-blue-dark/[.8]">
+              Web admin ini bertujuan untuk mengelola data dan informasi yang akan ditampilkan ke aplikasi mobile
+              Niastrip.Website ini dibangun dengan teknologi ReactJS dan Firebase
+            </p>
+            <button type="button"
+              class="py-3 px-4 flex justify-center items-center size-[50px] text-xl border border-b-gray-800 font-semibold rounded-lg bg-blue-dark text-blue hover:bg-gray-dark disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-200">
+              <svg viewBox="0 0 800 1000" fill="currentColor" height="1em" width="1em" {...props}>
+                <path
+                  d="M294 734c9.333-9.333 20.667-14 34-14 13.333 0 25.333 4.667 36 14 21.333 22.667 21.333 46 0 70l-42 40c-37.333 37.333-81.333 56-132 56-52 0-96.667-18.667-134-56S0 762.667 0 712c0-52 18.667-96.667 56-134l148-148c46.667-45.333 94.667-71 144-77s92 8.333 128 43c10.667 10.667 16 22.667 16 36 0 13.333-5.333 25.333-16 36-24 21.333-47.333 21.333-70 0-33.333-32-77.333-20.667-132 34L126 648c-17.333 17.333-26 38.667-26 64s8.667 46 26 62c17.333 17.333 38.333 26 63 26s45.667-8.667 63-26l42-40m450-574c37.333 37.333 56 81.333 56 132 0 52-18.667 96.667-56 134L586 584c-49.333 48-99.333 72-150 72-41.333 0-78.667-16.667-112-50-9.333-9.333-14-20.667-14-34 0-13.333 4.667-25.333 14-36 9.333-9.333 21-14 35-14s25.667 4.667 35 14c33.333 32 74 24 122-24l158-156c18.667-18.667 28-40 28-64 0-25.333-9.333-46-28-62-16-17.333-34.667-27.667-56-31-21.333-3.333-41.333 3.667-60 21l-50 50c-10.667 9.333-22.667 14-36 14-13.333 0-24.667-4.667-34-14-22.667-22.667-22.667-46 0-70l50-50c36-36 78.333-53 127-51s91.667 22.333 129 61" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <!--Project-->
+      </a>
+      <!-- End Card -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Card Blog -->
+  <!--End Project-->
 
+  <!--Contact-->
 
-        <!--Kontak-->
-        <div class="container-fluid text-center mt-5 bg-dark pb-5" id="Kontak">
-            <p class="fs-3 fw-bolder text-light">Kontak</p>
-            <p class="fs-6 fw-light text-light">Hubungi saya</p>
-            <div class="row mt-5 text-center mx-4">
-                <div class=" col">
-                    <i class="fas fa-phone-alt fa-2x" style="color: white;"></i>
-                    <p class="text-white fs-6 mt-1"> +62 8227 3009 256</p>
-                </div>
-                <div class="col">
-                    <i class="fab fa-whatsapp fa-2x" style="color: white;"></i>
-                    <p class="text-white fs-6 mt-1"> +62 8227 3009 256</p>
-                </div>
-                <div class="col">
-                    <i class="fas fa-envelope fa-2x" style="color: white;"></i>
-                    <p class="text-white fs-6 mt-1"> tiberlium.gaho@gmail.com</p>
-                </div>
-            </div>
-        </div>
-        <!--Kontak-->
+  <!--End Contact-->
+  <!--Footer-->
+  <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto" id="Contact">
+    <!-- Grid -->
+    <div class="text-center">
+      <div>
+        <a class="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+          href="#" aria-label="Brand">Tiberlium</a>
+      </div>
+      <!-- End Col -->
 
-        <!--footer-->
-        <div class="container-fluid>
-            <footer class=" bg-light text-center text-lg-start">
-            <!-- Copyright -->
-            <div class="text-center p-3 bg-secondary text-light">
-                © 2022 Copyright:
-                <a class=" text-light" href="https://tiberlium.github.io/">tiberlium.github.io</a>
-            </div>
-            <!-- Copyright -->
-            </footer>
-        </div>
-        <!--footer-->
-        <script src="https://code.jquery.com/jquery-3.6.0.js"
-            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-            crossorigin="anonymous"></script>
-        <script>
-            $(".nav-link").on("click", function () {
-                $(".nav-link.active").removeClass("active");
-                $(this).addClass("active");
-            });
+      <div class="mt-3">
+        <p class="text-white">Terima kasih telah berkunjung di <a
+            class="font-semibold text-blue hover:text-blue-700 dark:text-blue-500 dark:hover:text-white" href="#">My
+            Portfolio</a> saya.</p>
+        <p class="text-white font-light text-sm">© Tiberlium. 2024 Tailwind. All rights reserved.</p>
+      </div>
 
-        </script>
-    </body>
+      <!-- Social Brands -->
+      <div class="mt-3 space-x-2">
+        <a class="inline-flex justify-center items-center size-10 text-center text-white hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+          href="mailto:tiberlium.gaho@gmail.com">
+          <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+          </svg>
+        </a>
+        <a class="inline-flex justify-center items-center size-10 text-center text-white hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+          href="https://x.com/WibuNolep47?t=CctfIGOX1TmYrtTD_3-9Aw&s=08">
+          <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+          </svg>
+        </a>
+        <a class="inline-flex justify-center items-center size-10 text-center text-white hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+          href="https://github.com/Tiberlium">
+          <svg class="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+          </svg>
+        </a>
+        <a class="inline-flex justify-center items-center size-10 text-center text-white hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+          href="whatsapp://send?text=Hello&phone=+62895414762864">
+          <svg fill="currentColor" viewBox="0 0 16 16" height="1em" width="1em" {...props}>
+            <path
+              d="M13.601 2.326A7.854 7.854 0 007.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 003.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0013.6 2.326zM7.994 14.521a6.573 6.573 0 01-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 01-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 014.66 1.931 6.557 6.557 0 011.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 00-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+          </svg>
+        </a>
+      </div>
+      <!-- End Social Brands -->
+    </div>
+    <!-- End Grid -->
+  </footer>
+  <!--End Footer-->
+</body>
+<script src="./node_modules/preline/dist/preline.js"></script>
+<script src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
+<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 
 </html>
